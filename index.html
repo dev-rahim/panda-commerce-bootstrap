@@ -9,43 +9,48 @@
     <!-- Bootstrap Stylesheet -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/custom.css">
 </head>
 
 <body>
     <header>
         <!-- navigation start -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container">
-                <a class="navbar-brand" href="#">
-                    <img src="images/logo.png" alt="">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Shoes</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Backpack</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Subscribe</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <!-- navigation end -->
-        <!-- image slider start -->
         <div class="container">
-            <div id="carouselExampleControls" class="carousel slide container my-5 bg-info bg-gradient rounded-3 shadow"
+            <nav class=" mb-5 navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container">
+                    <a class="navbar-brand" href="#">
+                        <img src="images/logo.png" alt="">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#slider">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#shoes">Shoes</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#bagpack">Bagpack</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#subscribe">Subscribe</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!-- navigation end -->
+        <!-- image carousel slider start -->
+        <div id="slider" class="container">
+            <div id="carouselExampleControls"
+                class="carousel slide container my-5 panda-bg-info bg-gradient rounded-3 shadow"
                 data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active ">
@@ -55,7 +60,7 @@
                                 <p>This is the best headphone in the world for people who just want to waste time in
                                     front of funky world.</p>
                                 <h1>420$</h1>
-                                <button class="btn-success">Buy Now</button>
+                                <button class="buy-now-button">Buy Now</button>
                             </div>
                             <div class="col-lg-5">
                                 <img src="images/banner-images/headphone.png" class="d-block w-100" alt="...">
@@ -69,7 +74,7 @@
                                 <p>This is the best x-box in the world for people who just want to waste time in front
                                     of fake sports.</p>
                                 <h1>600$</h1>
-                                <button class="btn-success">Buy Now</button>
+                                <button class="buy-now-button">Buy Now</button>
                             </div>
                             <div class="col-lg-5">
                                 <img src="images/banner-images/xbox.png" class="d-block w-100" alt="...">
@@ -83,7 +88,7 @@
                                 <p>This is the best tv in the world for people who just want to waste time in front of
                                 </p>
                                 <h1>1200$</h1>
-                                <button class="btn-success">Buy Now</button>
+                                <button class="buy-now-button">Buy Now</button>
                             </div>
                             <div class="col-lg-5">
                                 <img src="images/banner-images/tv.png" class="d-block w-100" alt="...">
@@ -107,24 +112,22 @@
     </header>
     <main>
         <!-- categories section start -->
-        <section class="container">
+        <section class="container text-light">
             <div class="row g-5">
                 <div class="col-lg-4 col-md-6">
-                    <div class="p-3 rounded-3 bg-success d-flex align-items-center justify-content-between ">
+                    <div class="p-3 rounded-3 cat-1 d-flex align-items-center justify-content-between ">
                         <h1>Watch</h1>
                         <img src="images/categories/watch.png" alt="">
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
-                    <div
-                        class="p-3 rounded-3 bg-warning bg-gradient d-flex align-items-center justify-content-between ">
+                    <div class="p-3 rounded-3 cat-2 d-flex align-items-center justify-content-between ">
                         <h1>Bag</h1>
                         <img src="images/categories/bag.png" alt="">
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
-                    <div
-                        class="p-3 rounded-3 bg-primary bg-gradient d-flex align-items-center justify-content-between ">
+                    <div class="p-3 rounded-3 cat-3 d-flex align-items-center justify-content-between ">
                         <h1>Shoes</h1>
                         <img src="images/categories/shoes.png" alt="">
                     </div>
@@ -133,7 +136,7 @@
         </section>
         <!-- categories section end -->
         <!-- Shoes section start -->
-        <section class="container my-5">
+        <section id="shoes" class="container my-5">
             <h2>Shoes</h2>
             <div class="row row-cols-1 row-cols-md-2 g-4">
                 <div class="col-lg-4">
@@ -146,7 +149,7 @@
                             <h5 class="card-title">$120</h5>
                         </div>
                         <div class="card-footer border-0 bg-body">
-                            <button class="btn-warning rounded-3">Buy Now > ></button>
+                            <button class="buy-now-button rounded-3">Buy Now > ></button>
                         </div>
                     </div>
                 </div>
@@ -160,7 +163,7 @@
                             <h5 class="card-title">$120</h5>
                         </div>
                         <div class="card-footer border-0 bg-body">
-                            <button class="btn-warning rounded-3">Buy Now > ></button>
+                            <button class="buy-now-button rounded-3">Buy Now > ></button>
                         </div>
                     </div>
                 </div>
@@ -174,7 +177,7 @@
                             <h5 class="card-title">$120</h5>
                         </div>
                         <div class="card-footer border-0 bg-body">
-                            <button class="btn-warning rounded-3">Buy Now > ></button>
+                            <button class="buy-now-button rounded-3">Buy Now > ></button>
                         </div>
                     </div>
                 </div>
@@ -182,7 +185,7 @@
         </section>
         <!-- Shoes section end -->
         <!-- Backpack section start -->
-        <section class="container my-5">
+        <section id="bagpack" class="container my-5">
             <h2>Backpack</h2>
             <div class="row row-cols-1 row-cols-md-2 g-4">
                 <div class="col-lg-4">
@@ -195,7 +198,7 @@
                                 to additional.</p>
                         </div>
                         <div class="card-footer border-0 bg-body">
-                            <button class="btn-warning rounded-3">Buy Now > ></button>
+                            <button class="buy-now-button rounded-3">Buy Now > ></button>
                         </div>
                     </div>
                 </div>
@@ -209,7 +212,7 @@
                                 to additional.</p>
                         </div>
                         <div class="card-footer border-0 bg-body">
-                            <button class="btn-warning rounded-3">Buy Now > ></button>
+                            <button class="buy-now-button rounded-3">Buy Now > ></button>
                         </div>
                     </div>
                 </div>
@@ -223,7 +226,7 @@
                                 to additional.</p>
                         </div>
                         <div class="card-footer border-0 bg-body">
-                            <button class="btn-warning rounded-3">Buy Now > ></button>
+                            <button class="buy-now-button rounded-3">Buy Now > ></button>
                         </div>
                     </div>
                 </div>
@@ -231,12 +234,13 @@
         </section>
         <!-- Backpack section end -->
         <!-- subscribe section start -->
-        <section style="height: 300px;" class="container bg-info d-flex justify-content-center align-items-center">
+        <section id="subscribe" style="height: 300px;"
+            class="container rounded-3 panda-bg-info d-flex justify-content-center align-items-center">
             <div>
                 <h3>LET'S STAY IN TOUCH</h3>
                 <h6>Get updates on sales, specials and more</h6>
                 <p><input type="email" name="" id="" placeholder="Your Email"></p>
-                <button type="submit" class="btn btn-warning">Submit</button>
+                <button type="submit" class="btn buy-now-button">Submit</button>
             </div>
         </section>
         <!-- subscribe section end -->
