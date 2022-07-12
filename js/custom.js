@@ -1,7 +1,7 @@
 document.getElementById('shoes-section').style.color = "coral";
-document.getElementById('backpack-secton').style.backgroundColor = "#9932CC";
-document.getElementById('backpack-secton').style.color = "#fff";
-document.getElementById('backpack-secton').style.display = "inline";
+// document.getElementById('backpack-secton').style.backgroundColor = "#9932CC";
+document.getElementById('backpack-secton').style.color = "coral";
+// document.getElementById('backpack-secton').style.display = "inline";
 const cards = document.getElementsByClassName('card');
 for (const card of cards) {
     card.style.borderRadius = "30px";
